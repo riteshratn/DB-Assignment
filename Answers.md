@@ -5,6 +5,6 @@
 Similarly "Product" table has a column named "category_id" and inventory_id which is a foreign key referencing the primary key ("id") of the "Product_inventory" table.
 And "Product" table has a column named "discount_id" which is a foreign key referencing the primary key ("id") of the "discount" table.
 
-##Q2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
+## Q2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
 => You can make sure that the "category_id" column in the "Product" table only accepts values that already exist in the "id" column of the "Product_Category" table. This ensures that each product is assigned to a valid category.
 If someone tries to add a product with a category ID that doesn't exist in the "Product_Category" table, it won't be allowed. This helps maintain consistency and accuracy in the database.
